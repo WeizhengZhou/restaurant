@@ -1,0 +1,16 @@
+<div class="panel panel-default row">
+  <div class="col-xs-3">
+    Category here.
+  	
+  </div>
+
+  <div class="col-xs-9">
+    <div class="well" ng-repeat="item in ctrl.items">
+      <h3>     
+	      <img src="http://placekitten.com/200/200" />
+	      <strong>{{item.name}}</strong>
+	      <span class="pull-right label label-primary label-large"> {{item.price | currency}} </span>
+	    </h3>
+    </div>
+  </div>
+</div>

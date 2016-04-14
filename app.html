@@ -1,10 +1,20 @@
 <DOCTYPE html>
-<html>
+<html ng-app="foodApp">
 <head>
- <title>First Test</title>
- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.js"></script>
-	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 	integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <title>Food App</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <script type="text/javascript">
+    var foodApp = angular.module("foodApp", []);  	
+  </script>
+  <script type="text/javascript" src="controllers/food_ctrl.js">
+
+  </script>  
 </head>
-<body>
+<body ng-controller="foodCtrl as ctrl">
+	<ng-include src="'views/nav.html'"></ng-include>
+	<ng-include src="'views/content.html'"></ng-include>
 </body>
 </html>
